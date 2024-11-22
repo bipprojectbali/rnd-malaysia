@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - Area Analysis</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-white">ANALISIS KAWASAN</h1>
+                <p class="text-gray-400">Analisis Menyeluruh Kawasan Pilihan Raya</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <select class="bg-white text-gray-900 px-4 py-2 rounded">
+                    <option>Seluruh Malaysia</option>
+                    <option>Semenanjung</option>
+                    <option>Sabah</option>
+                    <option>Sarawak</option>
+                </select>
+                <span class="text-gray-400">22 November 2024</span>
+            </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-4 gap-4 mb-6">
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm">Jumlah Parlimen</h3>
+                <p class="text-2xl font-bold text-white">222</p>
+                <p class="text-blue-500 text-sm">Seluruh Malaysia</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm">Jumlah DUN</h3>
+                <p class="text-2xl font-bold text-white">587</p>
+                <p class="text-green-500 text-sm">13 Negeri + WP</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm">Jumlah Pengundi</h3>
+                <p class="text-2xl font-bold text-white">21.2M</p>
+                <p class="text-yellow-500 text-sm">↑ 2.1% PRU-15</p>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm">Jangkaan Turnout</h3>
+                <p class="text-2xl font-bold text-white">82%</p>
+                <p class="text-purple-500 text-sm">Analisis AI</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Parlimen Analysis -->
+            <div class="col-span-6 bg-gray-800 rounded-lg p-6">
+                <h2 class="text-xl font-bold text-white mb-4">Parlimen Level Analysis</h2>
+                <div class="space-y-6">
+                    <!-- Status Distribution -->
+                    <div>
+                        <h3 class="text-gray-400 mb-3">Status Kerusi</h3>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-gray-700 p-3 rounded">
+                                <p class="text-green-500 font-bold">85</p>
+                                <p class="text-sm text-gray-400">Selamat</p>
+                            </div>
+                            <div class="bg-gray-700 p-3 rounded">
+                                <p class="text-yellow-500 font-bold">92</p>
+                                <p class="text-sm text-gray-400">Marginal</p>
+                            </div>
+                            <div class="bg-gray-700 p-3 rounded">
+                                <p class="text-red-500 font-bold">45</p>
+                                <p class="text-sm text-gray-400">Berisiko</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Regional Distribution -->
+                    <div class="space-y-3">
+                        <h3 class="text-gray-400 mb-2">Taburan Wilayah</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Semenanjung</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-white">165</span>
+                                <div class="w-24 bg-gray-700 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full" style="width: 74%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Sabah</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-white">25</span>
+                                <div class="w-24 bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 11%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Sarawak</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-white">32</span>
+                                <div class="w-24 bg-gray-700 rounded-full h-2">
+                                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 15%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DUN Analysis -->
+            <div class="col-span-6 bg-gray-800 rounded-lg p-6">
+                <h2 class="text-xl font-bold text-white mb-4">DUN Level Analysis</h2>
+                <div class="space-y-6">
+                    <!-- Status Distribution -->
+                    <div>
+                        <h3 class="text-gray-400 mb-3">Status DUN</h3>
+                        <div class="grid grid-cols-3 gap-4">
+                            <div class="bg-gray-700 p-3 rounded">
+                                <p class="text-green-500 font-bold">245</p>
+                                <p class="text-sm text-gray-400">Selamat</p>
+                            </div>
+                            <div class="bg-gray-700 p-3 rounded">
+                                <p class="text-yellow-500 font-bold">212</p>
+                                <p class="text-sm text-gray-400">Marginal</p>
+                            </div>
+                            <div class="bg-gray-700 p-3 rounded">
+                                <p class="text-red-500 font-bold">130</p>
+                                <p class="text-sm text-gray-400">Berisiko</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- State Distribution -->
+                    <div class="space-y-3">
+                        <h3 class="text-gray-400 mb-2">Top 5 Negeri (Jumlah DUN)</h3>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Sarawak</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-white">82</span>
+                                <div class="w-24 bg-gray-700 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Sabah</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-white">73</span>
+                                <div class="w-24 bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-300">Johor</span>
+                            <div class="flex items-center gap-2">
+                                <span class="text-white">56</span>
+                                <div class="w-24 bg-gray-700 rounded-full h-2">
+                                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Voter Analysis Left -->
+            <div class="col-span-6 space-y-6">
+                <!-- Young & First Time Voters -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h2 class="text-xl font-bold text-white mb-4">Pengundi Muda & Kali Pertama</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="text-gray-400 mb-3">Pengundi Muda (18-25)</h3>
+                            <div class="space-y-3">
+                                <div class="bg-gray-700 p-3 rounded">
+                                    <p class="text-2xl font-bold text-blue-500">5.8M</p>
+                                    <p class="text-sm text-gray-400">27.4% Jumlah Pengundi</p>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">Urban</span>
+                                    <span class="text-green-500">62%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">Rural</span>
+                                    <span class="text-yellow-500">38%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-400 mb-3">Pengundi Kali Pertama</h3>
+                            <div class="space-y-3">
+                                <div class="bg-gray-700 p-3 rounded">
+                                    <p class="text-2xl font-bold text-green-500">4.2M</p>
+                                    <p class="text-sm text-gray-400">19.8% Jumlah Pengundi</p>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">18-21</span>
+                                    <span class="text-blue-500">45%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">>21</span>
+                                    <span class="text-purple-500">55%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Voter Analysis Right -->
+            <div class="col-span-6 space-y-6">
+                <!-- Senior & Outside Voters -->
+                <div class="bg-gray-800 rounded-lg p-6">
+                    <h2 class="text-xl font-bold text-white mb-4">Pengundi Atas 60 & Luar Kawasan</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="text-gray-400 mb-3">Pengundi Atas 60</h3>
+                            <div class="space-y-3">
+                                <div class="bg-gray-700 p-3 rounded">
+                                    <p class="text-2xl font-bold text-yellow-500">2.5M</p>
+                                    <p class="text-sm text-gray-400">11.6% Jumlah Pengundi</p>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">Urban</span>
+                                    <span class="text-green-500">45%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">Rural</span>
+                                    <span class="text-yellow-500">55%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-gray-400 mb-3">Pengundi Luar Kawasan</h3>
+                            <div class="space-y-3">
+                                <div class="bg-gray-700 p-3 rounded">
+                                    <p class="text-2xl font-bold text-purple-500">3.1M</p>
+                                    <p class="text-sm text-gray-400">14.6% Jumlah Pengundi</p>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">Dalam Negeri</span>
+                                    <span class="text-blue-500">85%</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-gray-300">Luar Negeri</span>
+                                    <span class="text-red-500">15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
