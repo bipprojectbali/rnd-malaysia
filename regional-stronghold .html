@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - Regional Stronghold</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-white">REGIONAL STRONGHOLD</h1>
+                <p class="text-gray-400">Analisis Kawasan Pengaruh Politik</p>
+            </div>
+            <div class="flex gap-4">
+                <select class="bg-white text-gray-900 px-4 py-2 rounded">
+                    <option>Seluruh Malaysia</option>
+                    <option>Semenanjung</option>
+                    <option>Sabah</option>
+                    <option>Sarawak</option>
+                </select>
+                <span class="text-gray-400">Last Updated: 22 Nov 2024</span>
+            </div>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="grid grid-cols-5 gap-4 mb-6">
+            <div class="bg-green-900/30 p-4 rounded-lg border border-green-500">
+                <h3 class="text-gray-400">Traditional Stronghold</h3>
+                <p class="text-2xl font-bold text-white">85</p>
+                <p class="text-green-500">38.3% kerusi</p>
+            </div>
+            <div class="bg-yellow-900/30 p-4 rounded-lg border border-yellow-500">
+                <h3 class="text-gray-400">Swing Areas</h3>
+                <p class="text-2xl font-bold text-white">65</p>
+                <p class="text-yellow-500">29.3% kerusi</p>
+            </div>
+            <div class="bg-blue-900/30 p-4 rounded-lg border border-blue-500">
+                <h3 class="text-gray-400">New Battleground</h3>
+                <p class="text-2xl font-bold text-white">42</p>
+                <p class="text-blue-500">18.9% kerusi</p>
+            </div>
+            <div class="bg-purple-900/30 p-4 rounded-lg border border-purple-500">
+                <h3 class="text-gray-400">Mixed Constituency</h3>
+                <p class="text-2xl font-bold text-white">22</p>
+                <p class="text-purple-500">9.9% kerusi</p>
+            </div>
+            <div class="bg-red-900/30 p-4 rounded-lg border border-red-500">
+                <h3 class="text-gray-400">Special Interest</h3>
+                <p class="text-2xl font-bold text-white">8</p>
+                <p class="text-red-500">3.6% kerusi</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Map Section -->
+            <div class="col-span-8">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Peta Kawasan</h2>
+                    <div class="h-[600px] bg-gray-700 rounded-lg flex items-center justify-center">
+                        [Interactive Regional Map]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analysis Panel -->
+            <div class="col-span-4 space-y-6">
+                <!-- Region Details -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Total Kerusi: 222</h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Semenanjung</span>
+                            <span class="text-white font-bold">165</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Sabah</span>
+                            <span class="text-white font-bold">25</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Sarawak</span>
+                            <span class="text-white font-bold">32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vote Margin -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Margin Kemenangan</h2>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Safe (>15%)</span>
+                            <span class="text-green-500 font-bold">85</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Moderate (5-15%)</span>
+                            <span class="text-yellow-500 font-bold">92</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Marginal (<5%)</span>
+                            <span class="text-red-500 font-bold">45</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Analysis -->
+            <div class="col-span-12 grid grid-cols-5 gap-6">
+                <!-- Traditional Stronghold -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-green-500 font-bold mb-4">Traditional Stronghold</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Pantai Timur</p>
+                            <p class="text-sm text-gray-400">PN Dominan</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Lembah Klang</p>
+                            <p class="text-sm text-gray-400">PH Dominan</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Sarawak</p>
+                            <p class="text-sm text-gray-400">GPS Dominan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swing Areas -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-yellow-500 font-bold mb-4">Swing Areas</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Selatan</p>
+                            <p class="text-sm text-gray-400">PH-PN-BN</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Utara</p>
+                            <p class="text-sm text-gray-400">PH-PN</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Pantai Barat</p>
+                            <p class="text-sm text-gray-400">PH-BN</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New Battleground -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-blue-500 font-bold mb-4">New Battleground</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Semi-Urban</p>
+                            <p class="text-sm text-gray-400">Emerging Areas</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Sabah Interior</p>
+                            <p class="text-sm text-gray-400">Multi-cornered</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Mixed Zones</p>
+                            <p class="text-sm text-gray-400">Dynamic Shift</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mixed Constituency -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-purple-500 font-bold mb-4">Mixed Constituency</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Urban-Rural Mix</p>
+                            <p class="text-sm text-gray-400">Demographics</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Multi-Ethnic</p>
+                            <p class="text-sm text-gray-400">Balanced Ratio</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Economic Diversity</p>
+                            <p class="text-sm text-gray-400">Mixed Income</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Special Interest -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-red-500 font-bold mb-4">Special Interest</h3>
+                    <div class="space-y-3">
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Border Areas</p>
+                            <p class="text-sm text-gray-400">Unique Issues</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Development Zones</p>
+                            <p class="text-sm text-gray-400">Economic Focus</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white">Strategic Areas</p>
+                            <p class="text-sm text-gray-400">Key Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
