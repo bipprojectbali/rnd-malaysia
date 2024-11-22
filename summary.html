@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - Summary Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-white">Summary Dashboard</h1>
+                <p class="text-gray-400">Ringkasan Analisis PRU-16</p>
+            </div>
+            <div class="flex gap-2">
+                <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded">Download Report</button>
+                <button class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded">Share</button>
+            </div>
+        </div>
+
+        <!-- Executive Summary Card -->
+        <div class="bg-gray-800 p-6 rounded-lg mb-6">
+            <h2 class="text-xl font-bold text-white mb-4">Executive Summary</h2>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-white mb-2">Trend Utama</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• Peningkatan 5% sokongan di kawasan urban</li>
+                        <li>• Penurunan isu perkauman sebanyak 12%</li>
+                        <li>• Fokus pengundi kepada isu ekonomi</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-white mb-2">Cabaran</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• Ketidakpastian pengundi muda</li>
+                        <li>• Kesan inflasi kepada sentiment</li>
+                        <li>• Persepsi terhadap kepimpinan</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-lg font-semibold text-white mb-2">Peluang</h3>
+                    <ul class="text-gray-300 space-y-2">
+                        <li>• Peningkatan sokongan kelas menengah</li>
+                        <li>• Keberkesanan media sosial</li>
+                        <li>• Program turun padang</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Performance Metrics -->
+        <div class="grid grid-cols-2 gap-6 mb-6">
+            <!-- Support Trends -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Trend Sokongan</h2>
+                <div class="space-y-4">
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-300">Pakatan Harapan + BN</span>
+                        <span class="text-green-500">↑ 38%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-4">
+                        <div class="bg-blue-600 h-4 rounded-full" style="width: 38%"></div>
+                    </div>
+
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-300">Perikatan Nasional</span>
+                        <span class="text-red-500">↓ 35%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-4">
+                        <div class="bg-green-600 h-4 rounded-full" style="width: 35%"></div>
+                    </div>
+
+                    <div class="flex justify-between mb-2">
+                        <span class="text-gray-300">GPS/GRS</span>
+                        <span class="text-gray-500">→ 15%</span>
+                    </div>
+                    <div class="w-full bg-gray-700 rounded-full h-4">
+                        <div class="bg-yellow-600 h-4 rounded-full" style="width: 15%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demographic Analysis -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Analisis Demografi</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-white mb-2">Pengundi Muda</h3>
+                        <p class="text-2xl font-bold text-blue-500">42%</p>
+                        <p class="text-gray-400 text-sm">↑ 8% dari PRU-15</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-white mb-2">Urban/Rural</h3>
+                        <p class="text-2xl font-bold text-green-500">65:35</p>
+                        <p class="text-gray-400 text-sm">Urban dominance</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-white mb-2">Kaum</h3>
+                        <p class="text-2xl font-bold text-yellow-500">M60:C25:I15</p>
+                        <p class="text-gray-400 text-sm">Ratio major races</p>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-white mb-2">Pendapatan</h3>
+                        <p class="text-2xl font-bold text-purple-500">B40:45%</p>
+                        <p class="text-gray-400 text-sm">Largest segment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Issues and Media Sentiment -->
+        <div class="grid grid-cols-2 gap-6">
+            <!-- Key Issues -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Isu-isu Utama</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-300">Ekonomi & Kos Sara Hidup</span>
+                        <div class="flex items-center">
+                            <span class="text-red-500 mr-2">Kritikal</span>
+                            <div class="w-24 bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-300">Pekerjaan</span>
+                        <div class="flex items-center">
+                            <span class="text-yellow-500 mr-2">Tinggi</span>
+                            <div class="w-24 bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-gray-300">Perumahan</span>
+                        <div class="flex items-center">
+                            <span class="text-blue-500 mr-2">Sederhana</span>
+                            <div class="w-24 bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Sentiment -->
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Sentiment Media</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-white mb-2">Media Sosial</h3>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-400">Positif</span>
+                            <span class="text-green-500">45%</span>
+                        </div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-400">Neutral</span>
+                            <span class="text-gray-500">30%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Negatif</span>
+                            <span class="text-red-500">25%</span>
+                        </div>
+                    </div>
+                    <div class="bg-gray-700 p-4 rounded-lg">
+                        <h3 class="text-white mb-2">Media Arus Perdana</h3>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-400">Positif</span>
+                            <span class="text-green-500">55%</span>
+                        </div>
+                        <div class="flex justify-between text-sm mb-1">
+                            <span class="text-gray-400">Neutral</span>
+                            <span class="text-gray-500">35%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-gray-400">Negatif</span>
+                            <span class="text-red-500">10%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
