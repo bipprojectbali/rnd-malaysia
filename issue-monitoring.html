@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - Issue Monitoring</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-white">ISSUE MONITORING</h1>
+                <p class="text-gray-400">Pemantauan Isu-Isu Utama</p>
+            </div>
+            <div class="flex gap-4">
+                <select class="bg-white text-gray-900 px-4 py-2 rounded">
+                    <option>Seluruh Malaysia</option>
+                    <option>Urban</option>
+                    <option>Rural</option>
+                </select>
+                <span class="text-gray-400">Last Updated: 22 Nov 2024</span>
+            </div>
+        </div>
+
+        <!-- Critical Issues Overview -->
+        <div class="grid grid-cols-4 gap-4 mb-6">
+            <div class="bg-red-900/30 p-4 rounded-lg border border-red-500">
+                <h3 class="text-gray-400">Most Critical Issue</h3>
+                <p class="text-2xl font-bold text-white">Cost of Living</p>
+                <p class="text-red-500">Severity: 92%</p>
+            </div>
+            <div class="bg-yellow-900/30 p-4 rounded-lg border border-yellow-500">
+                <h3 class="text-gray-400">Rising Concern</h3>
+                <p class="text-2xl font-bold text-white">Pekerjaan</p>
+                <p class="text-yellow-500">Trending ↑ 15%</p>
+            </div>
+            <div class="bg-green-900/30 p-4 rounded-lg border border-green-500">
+                <h3 class="text-gray-400">Improving Issue</h3>
+                <p class="text-2xl font-bold text-white">Infrastruktur</p>
+                <p class="text-green-500">Improved 8%</p>
+            </div>
+            <div class="bg-blue-900/30 p-4 rounded-lg border border-blue-500">
+                <h3 class="text-gray-400">Active Discussions</h3>
+                <p class="text-2xl font-bold text-white">4,521</p>
+                <p class="text-blue-500">Last 24 hours</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Issue Rankings -->
+            <div class="col-span-4 bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Ranking Isu</h2>
+                <div class="space-y-4">
+                    <div class="p-4 bg-gray-700 rounded-lg border-l-4 border-red-500">
+                        <div class="flex justify-between items-center">
+                            <span class="text-white font-bold">1. Cost of Living</span>
+                            <span class="text-red-500">92%</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Kritikal</p>
+                    </div>
+                    <div class="p-4 bg-gray-700 rounded-lg border-l-4 border-red-500">
+                        <div class="flex justify-between items-center">
+                            <span class="text-white font-bold">2. Ekonomi</span>
+                            <span class="text-red-500">88%</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Kritikal</p>
+                    </div>
+                    <div class="p-4 bg-gray-700 rounded-lg border-l-4 border-yellow-500">
+                        <div class="flex justify-between items-center">
+                            <span class="text-white font-bold">3. Pekerjaan</span>
+                            <span class="text-yellow-500">78%</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Tinggi</p>
+                    </div>
+                    <div class="p-4 bg-gray-700 rounded-lg border-l-4 border-yellow-500">
+                        <div class="flex justify-between items-center">
+                            <span class="text-white font-bold">4. Perumahan</span>
+                            <span class="text-yellow-500">75%</span>
+                        </div>
+                        <p class="text-sm text-gray-400">Tinggi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trending Analysis -->
+            <div class="col-span-8">
+                <div class="bg-gray-800 p-6 rounded-lg mb-6">
+                    <h2 class="text-xl font-bold text-white mb-4">Trend Analysis</h2>
+                    <div class="h-64 bg-gray-700 rounded flex items-center justify-center">
+                        [Issue Trending Chart]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Issue Analysis -->
+            <div class="col-span-12 grid grid-cols-4 gap-6">
+                <!-- Economic Issues -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Ekonomi & Sara Hidup</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Inflasi</span>
+                                <span class="text-red-500">Kritikal</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Harga Barang</span>
+                                <span class="text-red-500">Kritikal</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Subsidi</span>
+                                <span class="text-yellow-500">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Issues -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Isu Sosial</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Perumahan</span>
+                                <span class="text-yellow-500">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Pekerjaan</span>
+                                <span class="text-yellow-500">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Pendidikan</span>
+                                <span class="text-blue-500">Sederhana</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure & Health -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Infrastruktur & Kesihatan</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Kesihatan</span>
+                                <span class="text-blue-500">Sederhana</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 55%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Pengangkutan</span>
+                                <span class="text-green-500">Baik</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 45%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Utiliti</span>
+                                <span class="text-green-500">Baik</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Race & Religion -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Isu Perkauman & Agama</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Sensitiviti Kaum</span>
+                                <span class="text-yellow-500">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Isu Agama</span>
+                                <span class="text-yellow-500">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-400">Polarisasi</span>
+                                <span class="text-yellow-500">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 68%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
