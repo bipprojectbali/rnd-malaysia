@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - Prediction Metrics</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-white">PREDICTION METRICS</h1>
+                <p class="text-gray-400">Analisis Prediktif PRU-16</p>
+            </div>
+            <div class="flex gap-4">
+                <select class="bg-white text-gray-900 px-4 py-2 rounded">
+                    <option>Seluruh Malaysia</option>
+                    <option>Semenanjung</option>
+                    <option>Sabah</option>
+                    <option>Sarawak</option>
+                </select>
+                <span class="text-gray-400">22 November 2024</span>
+            </div>
+        </div>
+
+        <!-- Prediction Summary -->
+        <div class="grid grid-cols-5 gap-4 mb-6">
+            <div class="bg-blue-900/30 p-4 rounded-lg border border-blue-500">
+                <h3 class="text-gray-400">Confidence Score</h3>
+                <p class="text-2xl font-bold text-white">85.2%</p>
+                <p class="text-blue-500">Model Accuracy</p>
+            </div>
+            <div class="bg-green-900/30 p-4 rounded-lg border border-green-500">
+                <h3 class="text-gray-400">Jangkaan Turnout</h3>
+                <p class="text-2xl font-bold text-white">82.5%</p>
+                <p class="text-green-500">↑ 3.2% dari PRU15</p>
+            </div>
+            <div class="bg-purple-900/30 p-4 rounded-lg border border-purple-500">
+                <h3 class="text-gray-400">Margin of Error</h3>
+                <p class="text-2xl font-bold text-white">±2.8%</p>
+                <p class="text-purple-500">95% CI</p>
+            </div>
+            <div class="bg-yellow-900/30 p-4 rounded-lg border border-yellow-500">
+                <h3 class="text-gray-400">Volatile Seats</h3>
+                <p class="text-2xl font-bold text-white">45</p>
+                <p class="text-yellow-500">20.3% total</p>
+            </div>
+            <div class="bg-red-900/30 p-4 rounded-lg border border-red-500">
+                <h3 class="text-gray-400">Sample Size</h3>
+                <p class="text-2xl font-bold text-white">125K</p>
+                <p class="text-red-500">Last 30 days</p>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Historical Analysis -->
+            <div class="col-span-8 bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Historical Data Analysis</h2>
+                <div class="h-80 bg-gray-700 rounded-lg flex items-center justify-center">
+                    [Historical Trend Chart: PRU13-PRU15]
+                </div>
+                <div class="grid grid-cols-3 gap-4 mt-4">
+                    <div class="bg-gray-700 p-3 rounded-lg">
+                        <p class="text-sm text-gray-400">PRU13</p>
+                        <p class="text-lg text-white">84.8%</p>
+                        <p class="text-xs text-gray-400">Turnout</p>
+                    </div>
+                    <div class="bg-gray-700 p-3 rounded-lg">
+                        <p class="text-sm text-gray-400">PRU14</p>
+                        <p class="text-lg text-white">82.3%</p>
+                        <p class="text-xs text-gray-400">Turnout</p>
+                    </div>
+                    <div class="bg-gray-700 p-3 rounded-lg">
+                        <p class="text-sm text-gray-400">PRU15</p>
+                        <p class="text-lg text-white">79.3%</p>
+                        <p class="text-xs text-gray-400">Turnout</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Current Trend -->
+            <div class="col-span-4 space-y-6">
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Current Trend</h2>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Sokongan Kerajaan</span>
+                            <span class="text-green-500">↑ 48.5%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Sokongan Pembangkang</span>
+                            <span class="text-red-500">↓ 45.2%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Undecided</span>
+                            <span class="text-yellow-500">6.3%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voter Movement -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Pergerakan Pengundi</h2>
+                    <div class="space-y-3">
+                        <div class="bg-gray-700 p-3 rounded">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Swing Voters</span>
+                                <span class="text-yellow-500">15.2%</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">New Voters</span>
+                                <span class="text-blue-500">12.8%</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <div class="flex justify-between">
+                                <span class="text-gray-400">Loyal Base</span>
+                                <span class="text-green-500">72%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Turnout Prediction -->
+            <div class="col-span-6 bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Jangkaan Turnout</h2>
+                <div class="space-y-4">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h3 class="text-white mb-2">Urban</h3>
+                            <p class="text-2xl font-bold text-green-500">85%</p>
+                            <p class="text-sm text-gray-400">Expected Turnout</p>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h3 class="text-white mb-2">Semi-Urban</h3>
+                            <p class="text-2xl font-bold text-blue-500">82%</p>
+                            <p class="text-sm text-gray-400">Expected Turnout</p>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h3 class="text-white mb-2">Rural</h3>
+                            <p class="text-2xl font-bold text-yellow-500">78%</p>
+                            <p class="text-sm text-gray-400">Expected Turnout</p>
+                        </div>
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h3 class="text-white mb-2">Overall</h3>
+                            <p class="text-2xl font-bold text-purple-500">82.5%</p>
+                            <p class="text-sm text-gray-400">National Average</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Winning Probability -->
+            <div class="col-span-6 bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Winning Probability</h2>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h3 class="text-gray-400 mb-2">Kerajaan</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-white">Simple Majority</span>
+                                <span class="text-green-500">65%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-white">2/3 Majority</span>
+                                <span class="text-yellow-500">25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-gray-700 p-4 rounded-lg">
+                            <h3 class="text-gray-400 mb-2">Pembangkang</h3>
+                            <div class="flex justify-between items-center">
+                                <span class="text-white">Simple Majority</span>
+                                <span class="text-red-500">32%</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-white">Hung Parliament</span>
+                                <span class="text-yellow-500">3%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prediction Factors -->
+            <div class="col-span-12 grid grid-cols-4 gap-6">
+                <!-- Economic Factors -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Economic Impact</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Cost of Living</span>
+                            <span class="text-red-500">High</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Employment</span>
+                            <span class="text-yellow-500">Medium</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Growth Rate</span>
+                            <span class="text-green-500">Positive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Demographic Factors -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Demographic Shift</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Youth Vote</span>
+                            <span class="text-blue-500">+15%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Urban-Rural</span>
+                            <span class="text-yellow-500">65:35</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">First Time</span>
+                            <span class="text-purple-500">18%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Political Factors -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Political Climate</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Govt Satisfaction</span>
+                            <span class="text-green-500">52%</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Opposition Unity</span>
+                            <span class="text-yellow-500">Mixed</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Key Issues</span>
+                            <span class="text-red-500">High</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Regional Factors -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Regional Impact</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Peninsula</span>
+                            <span class="text-yellow-500">Split</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Sabah</span>
+                            <span class="text-blue-500">Mixed</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-400">Sarawak</span>
+                            <span class="text-green-500">Stable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
