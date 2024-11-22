@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - ML-AI Analysis</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen p-6">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-white">REKOMENDASI ML-AI</h1>
+                <p class="text-gray-400">22 November 2024 14:31 GMT+8</p>
+            </div>
+            <div class="flex gap-4">
+                <select class="bg-white text-gray-900 px-4 py-2 rounded">
+                    <option>Pakatan Harapan</option>
+                    <option>Barisan Nasional</option>
+                    <option>Perikatan Nasional</option>
+                    <option>GPS</option>
+                    <option>GRS</option>
+                </select>
+                <div class="relative">
+                    <span class="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span>
+                    <button class="text-white">🔔</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Analysis Grid -->
+        <div class="grid grid-cols-12 gap-6">
+            <!-- AI Recommendations Panel -->
+            <div class="col-span-4 space-y-6">
+                <!-- Party Profile -->
+                <div class="bg-gray-800 p-6 rounded-lg text-center">
+                    <img src="/api/placeholder/120/120" alt="Party Logo" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h2 class="text-white text-xl font-bold">Pakatan Harapan</h2>
+                    <p class="text-gray-400 mt-2">Confidence Score: 85%</p>
+                </div>
+
+                <!-- Priority Actions -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Tindakan Prioriti</h3>
+                    <div class="space-y-4">
+                        <div class="bg-red-900/30 p-4 rounded border border-red-500">
+                            <h4 class="text-red-400 font-bold">KRITIKAL</h4>
+                            <p class="text-gray-300 text-sm">Pengukuhan sokongan di kawasan luar bandar Pantai Timur</p>
+                        </div>
+                        <div class="bg-yellow-900/30 p-4 rounded border border-yellow-500">
+                            <h4 class="text-yellow-400 font-bold">PENTING</h4>
+                            <p class="text-gray-300 text-sm">Penambahbaikan program ekonomi untuk B40</p>
+                        </div>
+                        <div class="bg-green-900/30 p-4 rounded border border-green-500">
+                            <h4 class="text-green-400 font-bold">PEMANTAUAN</h4>
+                            <p class="text-gray-300 text-sm">Sentiment media sosial terhadap dasar kerajaan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Analysis Content -->
+            <div class="col-span-8 space-y-6">
+                <!-- Trend Analysis -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Analisis Trend AI</h3>
+                    <div class="h-64 bg-gray-700 rounded flex items-center justify-center">
+                        [AI Trend Analysis Chart]
+                    </div>
+                </div>
+
+                <!-- Predictive Metrics -->
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Popularity Prediction -->
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-white font-bold mb-4">Ramalan Populariti</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-400">Urban</span>
+                                    <span class="text-green-500">↑ 65%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-400">Semi-Urban</span>
+                                    <span class="text-yellow-500">→ 45%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-yellow-500 h-2 rounded-full" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="text-gray-400">Rural</span>
+                                    <span class="text-red-500">↓ 35%</span>
+                                </div>
+                                <div class="w-full bg-gray-700 rounded-full h-2">
+                                    <div class="bg-red-500 h-2 rounded-full" style="width: 35%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Issue Impact -->
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <h3 class="text-white font-bold mb-4">Impak Isu</h3>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-400">Ekonomi</span>
+                                <div class="flex items-center">
+                                    <span class="text-red-500 mr-2">Tinggi</span>
+                                    <div class="w-20 bg-gray-700 rounded-full h-2">
+                                        <div class="bg-red-500 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-400">Sosial</span>
+                                <div class="flex items-center">
+                                    <span class="text-yellow-500 mr-2">Sederhana</span>
+                                    <div class="w-20 bg-gray-700 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 60%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-400">Governans</span>
+                                <div class="flex items-center">
+                                    <span class="text-green-500 mr-2">Rendah</span>
+                                    <div class="w-20 bg-gray-700 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Recommendations -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h3 class="text-white font-bold mb-4">Rekomendasi AI</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-2">
+                            <h4 class="text-gray-400 font-bold">Jangka Pendek</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li>• Program bantuan kos sara hidup</li>
+                                <li>• Kempen media sosial fokus isu semasa</li>
+                                <li>• Penambahbaikan pusat khidmat rakyat</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="text-gray-400 font-bold">Jangka Panjang</h4>
+                            <ul class="text-gray-300 space-y-2 text-sm">
+                                <li>• Pemerkasaan ekonomi B40</li>
+                                <li>• Program latihan digital untuk belia</li>
+                                <li>• Reformasi institusi kerajaan</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Risk Assessment -->
+        <div class="mt-6 bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-white font-bold mb-4">Penilaian Risiko AI</h3>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h4 class="text-gray-400 mb-2">Risiko Politik</h4>
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-red-500">High</span>
+                        <span class="text-red-500 ml-2">↑ 12%</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h4 class="text-gray-400 mb-2">Risiko Sokongan</h4>
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-yellow-500">Med</span>
+                        <span class="text-yellow-500 ml-2">→ 5%</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h4 class="text-gray-400 mb-2">Risiko Reputasi</h4>
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-green-500">Low</span>
+                        <span class="text-green-500 ml-2">↓ 8%</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg">
+                    <h4 class="text-gray-400 mb-2">Risiko Implementasi</h4>
+                    <div class="flex items-center">
+                        <span class="text-2xl font-bold text-yellow-500">Med</span>
+                        <span class="text-yellow-500 ml-2">→ 3%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
