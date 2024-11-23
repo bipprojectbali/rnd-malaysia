@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - Realtime Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+    <div class="min-h-screen p-6">
+        <!-- Header with Realtime Updates -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-2xl font-bold text-white">Realtime Dashboard</h1>
+                <p class="text-gray-400">Live Updates: <span class="text-green-500">●</span> 22 Nov 2024, 15:30:45 MYT</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <div class="flex gap-2">
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded">Today</button>
+                    <button class="bg-gray-800 text-white px-4 py-2 rounded">Week</button>
+                    <button class="bg-gray-800 text-white px-4 py-2 rounded">Month</button>
+                </div>
+                <!-- Alert Counter -->
+                <div class="relative">
+                    <span class="absolute -top-1 -right-1 bg-red-500 text-xs text-white rounded-full w-5 h-5 flex items-center justify-center">5</span>
+                    <button class="text-red-500 font-bold px-4 py-2 rounded border border-red-500">ALERTS</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency Alerts Section -->
+        <div class="bg-red-900/30 p-4 rounded-lg border border-red-500 mb-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h2 class="text-xl font-bold text-white mb-2">Active Alerts</h2>
+                    <p class="text-red-400">5 Alerts Requiring Immediate Attention</p>
+                </div>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-red-900/50 p-3 rounded text-center">
+                        <p class="text-sm text-red-400">Critical</p>
+                        <p class="text-xl font-bold text-white">2</p>
+                    </div>
+                    <div class="bg-yellow-900/50 p-3 rounded text-center">
+                        <p class="text-sm text-yellow-400">Warning</p>
+                        <p class="text-xl font-bold text-white">2</p>
+                    </div>
+                    <div class="bg-blue-900/50 p-3 rounded text-center">
+                        <p class="text-sm text-blue-400">Info</p>
+                        <p class="text-xl font-bold text-white">1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Metrics Grid -->
+        <div class="grid grid-cols-6 gap-4 mb-6">
+            <!-- Overall Sentiment -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm mb-2">Overall Sentiment</h3>
+                <p class="text-2xl font-bold text-green-500">67.5%</p>
+                <p class="text-sm text-green-500">↑ 2.3%</p>
+            </div>
+            <!-- Coalition Support -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm mb-2">Coalition Support</h3>
+                <p class="text-2xl font-bold text-blue-500">58.2%</p>
+                <p class="text-sm text-blue-500">↑ 1.5%</p>
+            </div>
+            <!-- Active Issues -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm mb-2">Active Issues</h3>
+                <p class="text-2xl font-bold text-yellow-500">15</p>
+                <p class="text-sm text-yellow-500">3 Critical</p>
+            </div>
+            <!-- Media Mentions -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm mb-2">Media Mentions</h3>
+                <p class="text-2xl font-bold text-purple-500">2.5K</p>
+                <p class="text-sm text-purple-500">Last Hour</p>
+            </div>
+            <!-- Social Engagement -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm mb-2">Social Engagement</h3>
+                <p class="text-2xl font-bold text-indigo-500">154K</p>
+                <p class="text-sm text-indigo-500">↑ 12.3%</p>
+            </div>
+            <!-- AI Confidence -->
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <h3 class="text-gray-400 text-sm mb-2">AI Confidence</h3>
+                <p class="text-2xl font-bold text-red-500">92.5%</p>
+                <p class="text-sm text-red-500">High</p>
+            </div>
+        </div>
+
+        <!-- Main Content Grid -->
+        <div class="grid grid-cols-12 gap-6">
+            <!-- Live Activity Map -->
+            <div class="col-span-8 bg-gray-800 p-6 rounded-lg">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold text-white">Live Activity Map</h2>
+                    <div class="flex gap-2">
+                        <span class="text-green-500">● Active Events</span>
+                        <span class="text-yellow-500">● Scheduled</span>
+                        <span class="text-red-500">● Alerts</span>
+                    </div>
+                </div>
+                <div class="bg-gray-700 h-[400px] rounded-lg flex items-center justify-center">
+                    [Interactive Malaysia Map with Live Activities]
+                </div>
+            </div>
+
+            <!-- Live Feed -->
+            <div class="col-span-4 bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">Live Feed</h2>
+                <div class="space-y-4 h-[400px] overflow-y-auto">
+                    <div class="bg-gray-700 p-3 rounded border-l-4 border-red-500">
+                        <p class="text-white font-bold">Critical Alert</p>
+                        <p class="text-gray-400">Sentiment spike in Northern Region</p>
+                        <p class="text-xs text-gray-500">2 minutes ago</p>
+                    </div>
+                    <div class="bg-gray-700 p-3 rounded border-l-4 border-green-500">
+                        <p class="text-white font-bold">Event Update</p>
+                        <p class="text-gray-400">Major rally in Selangor</p>
+                        <p class="text-xs text-gray-500">5 minutes ago</p>
+                    </div>
+                    <div class="bg-gray-700 p-3 rounded border-l-4 border-blue-500">
+                        <p class="text-white font-bold">Media Alert</p>
+                        <p class="text-gray-400">Breaking news coverage</p>
+                        <p class="text-xs text-gray-500">12 minutes ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Real-time Analytics -->
+            <div class="col-span-6 space-y-6">
+                <!-- Coalition Strength -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Coalition Strength (Live)</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">PH-BN</span>
+                                <span class="text-green-500">42.5%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full" style="width: 42.5%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-white">PN</span>
+                                <span class="text-blue-500">38.2%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full" style="width: 38.2%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue Tracking -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Active Issues</h2>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-white">Ekonomi</span>
+                            <span class="text-red-500">Critical</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-white">Kos Sara Hidup</span>
+                            <span class="text-yellow-500">High</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-white">Infrastruktur</span>
+                            <span class="text-blue-500">Medium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Media Monitoring -->
+            <div class="col-span-6 space-y-6">
+                <!-- Social Media Sentiment -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Social Media Sentiment</h2>
+                    <div class="grid grid-cols-4 gap-4">
+                        <div class="bg-gray-700 p-3 rounded text-center">
+                            <p class="text-sm text-gray-400">Facebook</p>
+                            <p class="text-xl font-bold text-green-500">65%</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded text-center">
+                            <p class="text-sm text-gray-400">Twitter</p>
+                            <p class="text-xl font-bold text-blue-500">58%</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded text-center">
+                            <p class="text-sm text-gray-400">TikTok</p>
+                            <p class="text-xl font-bold text-pink-500">72%</p>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded text-center">
+                            <p class="text-sm text-gray-400">Instagram</p>
+                            <p class="text-xl font-bold text-purple-500">63%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Coverage -->
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <h2 class="text-xl font-bold text-white mb-4">Live News Coverage</h2>
+                    <div class="space-y-3">
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white font-bold">Breaking News</p>
+                            <p class="text-gray-400">15 Active Stories</p>
+                            <div class="flex justify-between mt-2">
+                                <span class="text-sm text-gray-400">Positive</span>
+                                <span class="text-green-500">45%</span>
+                            </div>
+                        </div>
+                        <div class="bg-gray-700 p-3 rounded">
+                            <p class="text-white font-bold">Top Coverage</p>
+                            <p class="text-gray-400">Economic Policies</p>
+                            <div class="flex justify-between mt-2">
+                                <span class="text-sm text-gray-400">Engagement</span>
+                                <span class="text-blue-500">High</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
