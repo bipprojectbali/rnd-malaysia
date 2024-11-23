@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RavenMY - UMNO Election Monitoring</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="p-4">
+        <!-- Top Stats Bar -->
+        <div class="grid grid-cols-5 gap-4 mb-6">
+            <div class="bg-blue-900/50 p-4 rounded-lg">
+                <div class="flex flex-col">
+                    <span class="text-sm text-gray-400">Sokongan UMNO</span>
+                    <span class="text-3xl font-bold">42.5%</span>
+                    <span class="text-green-500">↑ 2.3% minggu lepas</span>
+                </div>
+            </div>
+            <div class="bg-red-900/50 p-4 rounded-lg">
+                <div class="flex flex-col">
+                    <span class="text-sm text-gray-400">Kerusi Parlimen</span>
+                    <span class="text-3xl font-bold">35/222</span>
+                    <span class="text-blue-500">15.8% kerusi</span>
+                </div>
+            </div>
+            <div class="bg-purple-900/50 p-4 rounded-lg">
+                <div class="flex flex-col">
+                    <span class="text-sm text-gray-400">Sentiment Positif</span>
+                    <span class="text-3xl font-bold">67%</span>
+                    <span class="text-purple-500">Meningkat</span>
+                </div>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <div class="flex flex-col">
+                    <span class="text-sm text-gray-400">Jentera Aktif</span>
+                    <span class="text-3xl font-bold">128</span>
+                    <span class="text-blue-500">Bahagian UMNO</span>
+                </div>
+            </div>
+            <div class="bg-gray-800 p-4 rounded-lg">
+                <div class="flex flex-col">
+                    <span class="text-sm text-gray-400">Isu Kritikal</span>
+                    <span class="text-3xl font-bold">5</span>
+                    <span class="text-red-500">Perlu Perhatian</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="grid grid-cols-12 gap-4">
+            <!-- Left Maps Section -->
+            <div class="col-span-8 space-y-4">
+                <!-- Electoral Map -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h2 class="mb-2">Peta Kekuatan UMNO</h2>
+                    <div class="h-96 bg-gray-700 rounded">
+                        [Malaysia Electoral Map with UMNO Strongholds]
+                        <div class="mt-2 flex justify-between text-sm">
+                            <span class="text-green-500">■ Kubu Kuat (15 kerusi)</span>
+                            <span class="text-yellow-500">■ Marginal (12 kerusi)</span>
+                            <span class="text-red-500">■ Mencabar (8 kerusi)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Activity Map -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h2 class="mb-2">Aktiviti Kempen Semasa</h2>
+                    <div class="h-96 bg-gray-700 rounded">
+                        [Campaign Activity Map]
+                        <div class="mt-2 flex justify-between text-sm">
+                            <span class="text-blue-500">● Ceramah (25 aktif)</span>
+                            <span class="text-yellow-500">● Program (15 berjalan)</span>
+                            <span class="text-green-500">● Turun Padang (8 lokasi)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Stats Section -->
+            <div class="col-span-4 space-y-4">
+                <!-- Support Stats -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h2 class="mb-4">Analisis Sokongan</h2>
+                    <div class="grid gap-2">
+                        <div class="flex justify-between">
+                            <span>Melayu</span>
+                            <span class="text-green-500">65%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Cina</span>
+                            <span class="text-yellow-500">15%</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>India</span>
+                            <span class="text-blue-500">25%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Issue Tracking -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h2 class="mb-4">Isu-isu Utama</h2>
+                    <div class="grid gap-4">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Ekonomi</span>
+                                <span class="text-red-500">Kritikal</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span>Kos Sara Hidup</span>
+                                <span class="text-yellow-500">Tinggi</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-yellow-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campaign Activities -->
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h2 class="mb-4">Aktiviti Semasa</h2>
+                    <div class="space-y-2">
+                        <div class="flex justify-between bg-gray-700 p-2 rounded">
+                            <span>Ceramah Perdana</span>
+                            <span class="text-green-500">8 Lokasi</span>
+                        </div>
+                        <div class="flex justify-between bg-gray-700 p-2 rounded">
+                            <span>Program Rakyat</span>
+                            <span class="text-blue-500">12 Program</span>
+                        </div>
+                        <div class="flex justify-between bg-gray-700 p-2 rounded">
+                            <span>Rumah ke Rumah</span>
+                            <span class="text-yellow-500">15 DUN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="col-span-12">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h2 class="mb-4">Trend Sokongan Mingguan</h2>
+                    <div class="h-48 bg-gray-700 rounded">
+                        [Support Trend Chart]
+                    </div>
+                </div>
+            </div>
+
+            <!-- Status Grid -->
+            <div class="col-span-12 grid grid-cols-5 gap-4">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="mb-2">Bahagian Aktif</h3>
+                    <div class="text-2xl font-bold text-green-500">128/191</div>
+                    <div class="text-sm text-gray-400">Bahagian UMNO</div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="mb-2">Program Berjalan</h3>
+                    <div class="text-2xl font-bold text-yellow-500">45</div>
+                    <div class="text-sm text-gray-400">Sedang Berlangsung</div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="mb-2">Media Coverage</h3>
+                    <div class="text-2xl font-bold text-blue-500">72%</div>
+                    <div class="text-sm text-gray-400">Positif</div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="mb-2">Jentera Bergerak</h3>
+                    <div class="text-2xl font-bold text-purple-500">2,500</div>
+                    <div class="text-sm text-gray-400">Petugas</div>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="mb-2">Dana Terkumpul</h3>
+                    <div class="text-2xl font-bold text-red-500">85%</div>
+                    <div class="text-sm text-gray-400">Sasaran</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
