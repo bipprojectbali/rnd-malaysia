@@ -3,128 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RavenMY - Media Sentiment</title>
+    <title>RavenMY - Media & Coalition Sentiment</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-900">
     <div class="min-h-screen p-6">
-        <!-- Header with Real-time Stats -->
+        <!-- Header -->
         <div class="flex justify-between items-center mb-6">
             <div>
-                <h1 class="text-2xl font-bold text-white">Media Sentiment Analysis</h1>
+                <h1 class="text-2xl font-bold text-white">Media & Coalition Sentiment</h1>
                 <p class="text-gray-400">Live Updates: <span class="text-green-500">●</span> 22 Nov 2024, 15:30 MYT</p>
             </div>
             <div class="flex gap-4">
                 <select class="bg-gray-800 text-white px-4 py-2 rounded">
-                    <option>Bahasa Melayu</option>
-                    <option>English</option>
-                    <option>中文</option>
-                    <option>தமிழ்</option>
+                    <option>All Media</option>
+                    <option>Mainstream Media</option>
+                    <option>Social Media</option>
+                    <option>News Portal</option>
                 </select>
-                <button class="bg-blue-600 text-white px-4 py-2 rounded">Generate Report</button>
+                <select class="bg-gray-800 text-white px-4 py-2 rounded">
+                    <option>All Coalitions</option>
+                    <option>PH-BN</option>
+                    <option>PN</option>
+                    <option>GPS/GRS</option>
+                </select>
             </div>
         </div>
 
-        <!-- Overall Sentiment Overview -->
+        <!-- Coalition Quick Stats -->
         <div class="grid grid-cols-4 gap-4 mb-6">
-            <div class="bg-green-900/30 p-4 rounded-lg border border-green-500">
-                <h3 class="text-gray-400">Positive Sentiment</h3>
-                <p class="text-3xl font-bold text-white">42.5%</p>
-                <p class="text-green-500">↑ 3.2% from yesterday</p>
-            </div>
-            <div class="bg-gray-800 p-4 rounded-lg border border-gray-500">
-                <h3 class="text-gray-400">Neutral Sentiment</h3>
-                <p class="text-3xl font-bold text-white">28.3%</p>
-                <p class="text-gray-500">↓ 1.5% from yesterday</p>
-            </div>
-            <div class="bg-red-900/30 p-4 rounded-lg border border-red-500">
-                <h3 class="text-gray-400">Negative Sentiment</h3>
-                <p class="text-3xl font-bold text-white">29.2%</p>
-                <p class="text-red-500">↓ 1.7% from yesterday</p>
-            </div>
+            <!-- PH-BN -->
             <div class="bg-blue-900/30 p-4 rounded-lg border border-blue-500">
-                <h3 class="text-gray-400">Total Mentions</h3>
-                <p class="text-3xl font-bold text-white">452K</p>
-                <p class="text-blue-500">Last 24 hours</p>
+                <h3 class="text-white font-bold">PH-BN Coalition</h3>
+                <p class="text-3xl font-bold text-white">45.2%</p>
+                <div class="flex justify-between text-sm">
+                    <span class="text-gray-400">Media Sentiment</span>
+                    <span class="text-green-500">↑ 2.3%</span>
+                </div>
+            </div>
+            <!-- PN -->
+            <div class="bg-green-900/30 p-4 rounded-lg border border-green-500">
+                <h3 class="text-white font-bold">PN Coalition</h3>
+                <p class="text-3xl font-bold text-white">38.5%</p>
+                <div class="flex justify-between text-sm">
+                    <span class="text-gray-400">Media Sentiment</span>
+                    <span class="text-red-500">↓ 1.5%</span>
+                </div>
+            </div>
+            <!-- GPS/GRS -->
+            <div class="bg-yellow-900/30 p-4 rounded-lg border border-yellow-500">
+                <h3 class="text-white font-bold">GPS/GRS</h3>
+                <p class="text-3xl font-bold text-white">12.8%</p>
+                <div class="flex justify-between text-sm">
+                    <span class="text-gray-400">Media Sentiment</span>
+                    <span class="text-green-500">↑ 0.8%</span>
+                </div>
+            </div>
+            <!-- Overall -->
+            <div class="bg-purple-900/30 p-4 rounded-lg border border-purple-500">
+                <h3 class="text-white font-bold">Overall Coverage</h3>
+                <p class="text-3xl font-bold text-white">1.2M</p>
+                <div class="flex justify-between text-sm">
+                    <span class="text-gray-400">Total Mentions</span>
+                    <span class="text-purple-500">Last 24h</span>
+                </div>
             </div>
         </div>
 
-        <!-- Main Content Grid -->
+        <!-- Media Analysis Grid -->
         <div class="grid grid-cols-12 gap-6">
             <!-- Mainstream Media Analysis -->
             <div class="col-span-6 bg-gray-800 p-6 rounded-lg">
-                <h2 class="text-xl font-bold text-white mb-4 flex justify-between">
-                    <span>Mainstream Media</span>
-                    <span class="text-sm text-blue-500">Last 24 hours</span>
-                </h2>
-                <div class="space-y-6">
-                    <!-- TV Channels -->
-                    <div class="space-y-2">
-                        <h3 class="text-gray-400">TV Coverage</h3>
-                        <div class="bg-gray-700 p-3 rounded">
-                            <div class="flex justify-between mb-2">
-                                <span>TV3</span>
-                                <div class="flex gap-4">
-                                    <span class="text-green-500">45%</span>
-                                    <span class="text-gray-400">35%</span>
-                                    <span class="text-red-500">20%</span>
-                                </div>
-                            </div>
-                            <div class="w-full bg-gray-600 rounded-full h-2 flex">
-                                <div class="bg-green-500 h-2" style="width: 45%"></div>
-                                <div class="bg-gray-500 h-2" style="width: 35%"></div>
-                                <div class="bg-red-500 h-2" style="width: 20%"></div>
+                <h2 class="text-xl font-bold text-white mb-4">Mainstream Media Sentiment</h2>
+                <div class="space-y-4">
+                    <!-- BH -->
+                    <div class="bg-gray-700 p-4 rounded">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-white">Berita Harian</span>
+                            <div class="flex gap-4">
+                                <span>PH-BN <span class="text-blue-500">45%</span></span>
+                                <span>PN <span class="text-green-500">40%</span></span>
+                                <span>GPS <span class="text-yellow-500">15%</span></span>
                             </div>
                         </div>
-                        <div class="bg-gray-700 p-3 rounded">
-                            <div class="flex justify-between mb-2">
-                                <span>Astro Awani</span>
-                                <div class="flex gap-4">
-                                    <span class="text-green-500">40%</span>
-                                    <span class="text-gray-400">40%</span>
-                                    <span class="text-red-500">20%</span>
-                                </div>
+                        <div class="w-full bg-gray-600 rounded-full h-2 flex">
+                            <div class="bg-blue-500 h-2 rounded-l" style="width: 45%"></div>
+                            <div class="bg-green-500 h-2" style="width: 40%"></div>
+                            <div class="bg-yellow-500 h-2 rounded-r" style="width: 15%"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- The Star -->
+                    <div class="bg-gray-700 p-4 rounded">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-white">The Star</span>
+                            <div class="flex gap-4">
+                                <span>PH-BN <span class="text-blue-500">48%</span></span>
+                                <span>PN <span class="text-green-500">37%</span></span>
+                                <span>GPS <span class="text-yellow-500">15%</span></span>
                             </div>
-                            <div class="w-full bg-gray-600 rounded-full h-2 flex">
-                                <div class="bg-green-500 h-2" style="width: 40%"></div>
-                                <div class="bg-gray-500 h-2" style="width: 40%"></div>
-                                <div class="bg-red-500 h-2" style="width: 20%"></div>
-                            </div>
+                        </div>
+                        <div class="w-full bg-gray-600 rounded-full h-2 flex">
+                            <div class="bg-blue-500 h-2 rounded-l" style="width: 48%"></div>
+                            <div class="bg-green-500 h-2" style="width: 37%"></div>
+                            <div class="bg-yellow-500 h-2 rounded-r" style="width: 15%"></div>
                         </div>
                     </div>
 
-                    <!-- Print Media -->
-                    <div class="space-y-2">
-                        <h3 class="text-gray-400">Print Media</h3>
-                        <div class="bg-gray-700 p-3 rounded">
-                            <div class="flex justify-between mb-2">
-                                <span>Berita Harian</span>
-                                <div class="flex gap-4">
-                                    <span class="text-green-500">38%</span>
-                                    <span class="text-gray-400">42%</span>
-                                    <span class="text-red-500">20%</span>
-                                </div>
-                            </div>
-                            <div class="w-full bg-gray-600 rounded-full h-2 flex">
-                                <div class="bg-green-500 h-2" style="width: 38%"></div>
-                                <div class="bg-gray-500 h-2" style="width: 42%"></div>
-                                <div class="bg-red-500 h-2" style="width: 20%"></div>
+                    <!-- Sin Chew -->
+                    <div class="bg-gray-700 p-4 rounded">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-white">Sin Chew Daily</span>
+                            <div class="flex gap-4">
+                                <span>PH-BN <span class="text-blue-500">42%</span></span>
+                                <span>PN <span class="text-green-500">43%</span></span>
+                                <span>GPS <span class="text-yellow-500">15%</span></span>
                             </div>
                         </div>
-                        <div class="bg-gray-700 p-3 rounded">
-                            <div class="flex justify-between mb-2">
-                                <span>The Star</span>
-                                <div class="flex gap-4">
-                                    <span class="text-green-500">35%</span>
-                                    <span class="text-gray-400">45%</span>
-                                    <span class="text-red-500">20%</span>
-                                </div>
-                            </div>
-                            <div class="w-full bg-gray-600 rounded-full h-2 flex">
-                                <div class="bg-green-500 h-2" style="width: 35%"></div>
-                                <div class="bg-gray-500 h-2" style="width: 45%"></div>
-                                <div class="bg-red-500 h-2" style="width: 20%"></div>
-                            </div>
+                        <div class="w-full bg-gray-600 rounded-full h-2 flex">
+                            <div class="bg-blue-500 h-2 rounded-l" style="width: 42%"></div>
+                            <div class="bg-green-500 h-2" style="width: 43%"></div>
+                            <div class="bg-yellow-500 h-2 rounded-r" style="width: 15%"></div>
                         </div>
                     </div>
                 </div>
@@ -132,146 +131,158 @@
 
             <!-- Social Media Analysis -->
             <div class="col-span-6 bg-gray-800 p-6 rounded-lg">
-                <h2 class="text-xl font-bold text-white mb-4 flex justify-between">
-                    <span>Social Media</span>
-                    <span class="text-sm text-blue-500">Real-time Analysis</span>
-                </h2>
+                <h2 class="text-xl font-bold text-white mb-4">Social Media Analysis</h2>
                 <div class="grid grid-cols-2 gap-4">
                     <!-- Facebook -->
                     <div class="bg-gray-700 p-4 rounded">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-white">Facebook</h3>
-                            <span class="text-sm text-blue-500">1.2M Mentions</span>
-                        </div>
+                        <h3 class="text-white mb-2">Facebook</h3>
                         <div class="space-y-2">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Positive</span>
-                                <span class="text-green-500">35%</span>
+                            <div class="flex justify-between">
+                                <span>PH-BN</span>
+                                <span class="text-blue-500">42%</span>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Neutral</span>
-                                <span class="text-gray-400">25%</span>
+                            <div class="flex justify-between">
+                                <span>PN</span>
+                                <span class="text-green-500">45%</span>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Negative</span>
-                                <span class="text-red-500">40%</span>
+                            <div class="flex justify-between">
+                                <span>GPS/GRS</span>
+                                <span class="text-yellow-500">13%</span>
+                            </div>
+                            <div class="text-xs text-gray-400 mt-2">
+                                2.1M Interactions
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Twitter/X -->
+                    <div class="bg-gray-700 p-4 rounded">
+                        <h3 class="text-white mb-2">X (Twitter)</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>PH-BN</span>
+                                <span class="text-blue-500">38%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>PN</span>
+                                <span class="text-green-500">48%</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>GPS/GRS</span>
+                                <span class="text-yellow-500">14%</span>
+                            </div>
+                            <div class="text-xs text-gray-400 mt-2">
+                                850K Tweets
                             </div>
                         </div>
                     </div>
 
                     <!-- TikTok -->
                     <div class="bg-gray-700 p-4 rounded">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-white">TikTok</h3>
-                            <span class="text-sm text-blue-500">850K Views</span>
-                        </div>
+                        <h3 class="text-white mb-2">TikTok</h3>
                         <div class="space-y-2">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Positive</span>
-                                <span class="text-green-500">42%</span>
+                            <div class="flex justify-between">
+                                <span>PH-BN</span>
+                                <span class="text-blue-500">44%</span>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Neutral</span>
-                                <span class="text-gray-400">33%</span>
+                            <div class="flex justify-between">
+                                <span>PN</span>
+                                <span class="text-green-500">46%</span>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Negative</span>
-                                <span class="text-red-500">25%</span>
+                            <div class="flex justify-between">
+                                <span>GPS/GRS</span>
+                                <span class="text-yellow-500">10%</span>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- X (Twitter) -->
-                    <div class="bg-gray-700 p-4 rounded">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-white">X (Twitter)</h3>
-                            <span class="text-sm text-blue-500">520K Tweets</span>
-                        </div>
-                        <div class="space-y-2">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Positive</span>
-                                <span class="text-green-500">28%</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Neutral</span>
-                                <span class="text-gray-400">32%</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Negative</span>
-                                <span class="text-red-500">40%</span>
+                            <div class="text-xs text-gray-400 mt-2">
+                                5.2M Views
                             </div>
                         </div>
                     </div>
 
                     <!-- Instagram -->
                     <div class="bg-gray-700 p-4 rounded">
-                        <div class="flex justify-between items-center mb-3">
-                            <h3 class="text-white">Instagram</h3>
-                            <span class="text-sm text-blue-500">750K Posts</span>
-                        </div>
+                        <h3 class="text-white mb-2">Instagram</h3>
                         <div class="space-y-2">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Positive</span>
-                                <span class="text-green-500">45%</span>
+                            <div class="flex justify-between">
+                                <span>PH-BN</span>
+                                <span class="text-blue-500">46%</span>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Neutral</span>
-                                <span class="text-gray-400">35%</span>
+                            <div class="flex justify-between">
+                                <span>PN</span>
+                                <span class="text-green-500">42%</span>
                             </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Negative</span>
-                                <span class="text-red-500">20%</span>
+                            <div class="flex justify-between">
+                                <span>GPS/GRS</span>
+                                <span class="text-yellow-500">12%</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Online News Portal -->
-            <div class="col-span-6 bg-gray-800 p-6 rounded-lg">
-                <h2 class="text-xl font-bold text-white mb-4">Portal Berita Online</h2>
-                <div class="space-y-4">
-                    <!-- Individual Portal Analysis -->
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-gray-700 p-4 rounded">
-                            <h3 class="text-white mb-2">Malaysiakini</h3>
-                            <div class="flex justify-between text-sm mb-1">
-                                <span class="text-gray-400">Articles</span>
-                                <span class="text-blue-500">125</span>
-                            </div>
-                            <div class="flex justify-between text-sm mb-1">
-                                <span class="text-gray-400">Comments</span>
-                                <span class="text-blue-500">2.5K</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Sentiment</span>
-                                <span class="text-green-500">+0.35</span>
-                            </div>
-                        </div>
-                        <div class="bg-gray-700 p-4 rounded">
-                            <h3 class="text-white mb-2">The Malaysian Insight</h3>
-                            <div class="flex justify-between text-sm mb-1">
-                                <span class="text-gray-400">Articles</span>
-                                <span class="text-blue-500">98</span>
-                            </div>
-                            <div class="flex justify-between text-sm mb-1">
-                                <span class="text-gray-400">Comments</span>
-                                <span class="text-blue-500">1.8K</span>
-                            </div>
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-400">Sentiment</span>
-                                <span class="text-yellow-500">+0.12</span>
+                            <div class="text-xs text-gray-400 mt-2">
+                                1.8M Engagements
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Political Blogs -->
-            <div class="col-span-6 bg-gray-800 p-6 rounded-lg">
-                <h2 class="text-xl font-bold text-white mb-4">Blog Politik</h2>
-                <div class="space-y-4">
+            <!-- News Portals -->
+            <div class="col-span-12 bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold text-white mb-4">News Portal Coverage</h2>
+                <div class="grid grid-cols-3 gap-6">
                     <div class="bg-gray-700 p-4 rounded">
-                        <div class="flex justify-between mb-4">
-                            <span class="text-white">Overall Sentiment Distribution</span>
-                            <div class="
+                        <h3 class="text-white mb-3">Malaysiakini</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Articles</span>
+                                <span class="text-blue-500">325</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Coalition Focus</span>
+                                <div class="flex gap-2">
+                                    <span class="text-blue-500">40%</span>
+                                    <span class="text-green-500">45%</span>
+                                    <span class="text-yellow-500">15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-700 p-4 rounded">
+                        <h3 class="text-white mb-3">The Malaysian Insight</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Articles</span>
+                                <span class="text-blue-500">245</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Coalition Focus</span>
+                                <div class="flex gap-2">
+                                    <span class="text-blue-500">42%</span>
+                                    <span class="text-green-500">43%</span>
+                                    <span class="text-yellow-500">15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-700 p-4 rounded">
+                        <h3 class="text-white mb-3">Free Malaysia Today</h3>
+                        <div class="space-y-2">
+                            <div class="flex justify-between">
+                                <span>Articles</span>
+                                <span class="text-blue-500">280</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Coalition Focus</span>
+                                <div class="flex gap-2">
+                                    <span class="text-blue-500">44%</span>
+                                    <span class="text-green-500">41%</span>
+                                    <span class="text-yellow-500">15%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
